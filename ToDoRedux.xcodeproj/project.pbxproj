@@ -10,11 +10,13 @@
 		1F824492FCCDD9BD16D82910 /* Pods_ToDoRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91EF7A37B6A0ECC9B208310 /* Pods_ToDoRedux.framework */; };
 		B85A234C0F53FCFAC0083500 /* Pods_ToDoReduxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3535B90FA352A076859A671E /* Pods_ToDoReduxTests.framework */; };
 		DD362A0F1F607D6D007307CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD362A0E1F607D6D007307CC /* AppDelegate.swift */; };
-		DD362A111F607D6D007307CC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD362A101F607D6D007307CC /* ViewController.swift */; };
+		DD362A111F607D6D007307CC /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD362A101F607D6D007307CC /* MainViewController.swift */; };
 		DD362A141F607D6D007307CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD362A121F607D6D007307CC /* Main.storyboard */; };
 		DD362A161F607D6D007307CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD362A151F607D6D007307CC /* Assets.xcassets */; };
 		DD362A191F607D6D007307CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD362A171F607D6D007307CC /* LaunchScreen.storyboard */; };
 		DD362A241F607D6D007307CC /* ToDoReduxTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD362A231F607D6D007307CC /* ToDoReduxTests.swift */; };
+		DD362A341F607FF7007307CC /* ApplicationState.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD362A331F607FF7007307CC /* ApplicationState.swift */; };
+		DD362A391F608205007307CC /* ApplicationReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD362A381F608205007307CC /* ApplicationReducer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 		DA49E1CB20431B50A8299379 /* Pods-ToDoRedux.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoRedux.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoRedux/Pods-ToDoRedux.debug.xcconfig"; sourceTree = "<group>"; };
 		DD362A0B1F607D6D007307CC /* ToDoRedux.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToDoRedux.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD362A0E1F607D6D007307CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DD362A101F607D6D007307CC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DD362A101F607D6D007307CC /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DD362A131F607D6D007307CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD362A151F607D6D007307CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD362A181F607D6D007307CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +46,8 @@
 		DD362A1F1F607D6D007307CC /* ToDoReduxTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ToDoReduxTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD362A231F607D6D007307CC /* ToDoReduxTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoReduxTests.swift; sourceTree = "<group>"; };
 		DD362A251F607D6D007307CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD362A331F607FF7007307CC /* ApplicationState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationState.swift; sourceTree = "<group>"; };
+		DD362A381F608205007307CC /* ApplicationReducer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApplicationReducer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,7 +113,12 @@
 		DD362A0D1F607D6D007307CC /* ToDoRedux */ = {
 			isa = PBXGroup;
 			children = (
-				DD362A101F607D6D007307CC /* ViewController.swift */,
+				DD362A351F60816A007307CC /* Views */,
+				DD362A321F607FC7007307CC /* Middleware */,
+				DD362A311F607FB2007307CC /* Action Creators */,
+				DD362A2F1F607F8F007307CC /* Actions */,
+				DD362A301F607FAC007307CC /* Reducers */,
+				DD362A331F607FF7007307CC /* ApplicationState.swift */,
 				DD362A121F607D6D007307CC /* Main.storyboard */,
 				DD362A2E1F607EF6007307CC /* Supporting Files */,
 			);
@@ -134,6 +143,43 @@
 				DD362A1A1F607D6D007307CC /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DD362A2F1F607F8F007307CC /* Actions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Actions;
+			sourceTree = "<group>";
+		};
+		DD362A301F607FAC007307CC /* Reducers */ = {
+			isa = PBXGroup;
+			children = (
+				DD362A381F608205007307CC /* ApplicationReducer.swift */,
+			);
+			name = Reducers;
+			sourceTree = "<group>";
+		};
+		DD362A311F607FB2007307CC /* Action Creators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Action Creators";
+			sourceTree = "<group>";
+		};
+		DD362A321F607FC7007307CC /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Middleware;
+			sourceTree = "<group>";
+		};
+		DD362A351F60816A007307CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DD362A101F607D6D007307CC /* MainViewController.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -340,7 +386,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DD362A111F607D6D007307CC /* ViewController.swift in Sources */,
+				DD362A391F608205007307CC /* ApplicationReducer.swift in Sources */,
+				DD362A111F607D6D007307CC /* MainViewController.swift in Sources */,
+				DD362A341F607FF7007307CC /* ApplicationState.swift in Sources */,
 				DD362A0F1F607D6D007307CC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
