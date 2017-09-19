@@ -16,7 +16,7 @@ class MainViewController: UITableViewController, StoreSubscriber {
   @IBOutlet var tableEmptyView: UIView!
   
   private lazy var addTodoController: UIAlertController = {
-    let alertController = UIAlertController(title: "What should You do?", message: nil, preferredStyle: .alert)
+    let alertController = UIAlertController(title: "What do You want to do?", message: nil, preferredStyle: .alert)
     alertController.addTextField {
       $0.placeholder = "Enter text here"
     }
