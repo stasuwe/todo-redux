@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		151B0C201F719B4200F28A38 /* TodoActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B0C1F1F719B4200F28A38 /* TodoActions.swift */; };
+		151B0C231F719BF200F28A38 /* TodoActionCreators.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B0C221F719BF200F28A38 /* TodoActionCreators.swift */; };
+		151B0C251F719DA600F28A38 /* SortingActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B0C241F719DA600F28A38 /* SortingActions.swift */; };
+		151B0C271F719DB400F28A38 /* SynchronizationActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B0C261F719DB400F28A38 /* SynchronizationActions.swift */; };
+		151B0C291F719ED500F28A38 /* TodosReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B0C281F719ED500F28A38 /* TodosReducer.swift */; };
+		151B0C2B1F719EE400F28A38 /* SortingReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B0C2A1F719EE400F28A38 /* SortingReducer.swift */; };
+		151B0C2D1F719EF000F28A38 /* SynchronizationReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151B0C2C1F719EF000F28A38 /* SynchronizationReducer.swift */; };
+		151D2B281F703D6500E47534 /* ArchiveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151D2B271F703D6500E47534 /* ArchiveViewController.swift */; };
+		158E1F8C1F704E49002D629B /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 158E1F8B1F704E49002D629B /* SettingsViewController.swift */; };
+		15EC4CF21F7051D400948B65 /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EC4CF11F7051D400948B65 /* Middleware.swift */; };
+		15FA29F31F71AFDF00B8ACF6 /* ToDo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FA29F21F71AFDF00B8ACF6 /* ToDo.swift */; };
+		15FA29F51F71B03900B8ACF6 /* ReduxExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FA29F41F71B03900B8ACF6 /* ReduxExtensions.swift */; };
 		1F824492FCCDD9BD16D82910 /* Pods_ToDoRedux.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B91EF7A37B6A0ECC9B208310 /* Pods_ToDoRedux.framework */; };
 		B85A234C0F53FCFAC0083500 /* Pods_ToDoReduxTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3535B90FA352A076859A671E /* Pods_ToDoReduxTests.framework */; };
 		DD362A0F1F607D6D007307CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD362A0E1F607D6D007307CC /* AppDelegate.swift */; };
@@ -31,6 +43,18 @@
 
 /* Begin PBXFileReference section */
 		03F0587FFA1FCBE9E401C020 /* Pods-ToDoReduxTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoReduxTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoReduxTests/Pods-ToDoReduxTests.debug.xcconfig"; sourceTree = "<group>"; };
+		151B0C1F1F719B4200F28A38 /* TodoActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoActions.swift; sourceTree = "<group>"; };
+		151B0C221F719BF200F28A38 /* TodoActionCreators.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoActionCreators.swift; sourceTree = "<group>"; };
+		151B0C241F719DA600F28A38 /* SortingActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingActions.swift; sourceTree = "<group>"; };
+		151B0C261F719DB400F28A38 /* SynchronizationActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizationActions.swift; sourceTree = "<group>"; };
+		151B0C281F719ED500F28A38 /* TodosReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosReducer.swift; sourceTree = "<group>"; };
+		151B0C2A1F719EE400F28A38 /* SortingReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SortingReducer.swift; sourceTree = "<group>"; };
+		151B0C2C1F719EF000F28A38 /* SynchronizationReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizationReducer.swift; sourceTree = "<group>"; };
+		151D2B271F703D6500E47534 /* ArchiveViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArchiveViewController.swift; sourceTree = "<group>"; };
+		158E1F8B1F704E49002D629B /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		15EC4CF11F7051D400948B65 /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
+		15FA29F21F71AFDF00B8ACF6 /* ToDo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDo.swift; sourceTree = "<group>"; };
+		15FA29F41F71B03900B8ACF6 /* ReduxExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReduxExtensions.swift; sourceTree = "<group>"; };
 		3535B90FA352A076859A671E /* Pods_ToDoReduxTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToDoReduxTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D17E189EBB026F489515EF /* Pods-ToDoRedux.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoRedux.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoRedux/Pods-ToDoRedux.release.xcconfig"; sourceTree = "<group>"; };
 		A684E2BC8EFA4663D8C5A69C /* Pods-ToDoReduxTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToDoReduxTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ToDoReduxTests/Pods-ToDoReduxTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -70,6 +94,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15FA29F11F71AFD000B8ACF6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				15FA29F21F71AFDF00B8ACF6 /* ToDo.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		312CA689C1DDAA8B1425E762 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -113,6 +145,7 @@
 		DD362A0D1F607D6D007307CC /* ToDoRedux */ = {
 			isa = PBXGroup;
 			children = (
+				15FA29F11F71AFD000B8ACF6 /* Models */,
 				DD362A351F60816A007307CC /* Views */,
 				DD362A321F607FC7007307CC /* Middleware */,
 				DD362A311F607FB2007307CC /* Action Creators */,
@@ -138,6 +171,7 @@
 			isa = PBXGroup;
 			children = (
 				DD362A0E1F607D6D007307CC /* AppDelegate.swift */,
+				15FA29F41F71B03900B8ACF6 /* ReduxExtensions.swift */,
 				DD362A151F607D6D007307CC /* Assets.xcassets */,
 				DD362A171F607D6D007307CC /* LaunchScreen.storyboard */,
 				DD362A1A1F607D6D007307CC /* Info.plist */,
@@ -148,6 +182,9 @@
 		DD362A2F1F607F8F007307CC /* Actions */ = {
 			isa = PBXGroup;
 			children = (
+				151B0C1F1F719B4200F28A38 /* TodoActions.swift */,
+				151B0C241F719DA600F28A38 /* SortingActions.swift */,
+				151B0C261F719DB400F28A38 /* SynchronizationActions.swift */,
 			);
 			name = Actions;
 			sourceTree = "<group>";
@@ -156,6 +193,9 @@
 			isa = PBXGroup;
 			children = (
 				DD362A381F608205007307CC /* ApplicationReducer.swift */,
+				151B0C281F719ED500F28A38 /* TodosReducer.swift */,
+				151B0C2A1F719EE400F28A38 /* SortingReducer.swift */,
+				151B0C2C1F719EF000F28A38 /* SynchronizationReducer.swift */,
 			);
 			name = Reducers;
 			sourceTree = "<group>";
@@ -163,6 +203,7 @@
 		DD362A311F607FB2007307CC /* Action Creators */ = {
 			isa = PBXGroup;
 			children = (
+				151B0C221F719BF200F28A38 /* TodoActionCreators.swift */,
 			);
 			name = "Action Creators";
 			sourceTree = "<group>";
@@ -170,6 +211,7 @@
 		DD362A321F607FC7007307CC /* Middleware */ = {
 			isa = PBXGroup;
 			children = (
+				15EC4CF11F7051D400948B65 /* Middleware.swift */,
 			);
 			name = Middleware;
 			sourceTree = "<group>";
@@ -178,6 +220,8 @@
 			isa = PBXGroup;
 			children = (
 				DD362A101F607D6D007307CC /* MainViewController.swift */,
+				151D2B271F703D6500E47534 /* ArchiveViewController.swift */,
+				158E1F8B1F704E49002D629B /* SettingsViewController.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -397,10 +441,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				151B0C251F719DA600F28A38 /* SortingActions.swift in Sources */,
 				DD362A391F608205007307CC /* ApplicationReducer.swift in Sources */,
 				DD362A111F607D6D007307CC /* MainViewController.swift in Sources */,
 				DD362A341F607FF7007307CC /* ApplicationState.swift in Sources */,
+				151B0C201F719B4200F28A38 /* TodoActions.swift in Sources */,
+				151B0C2D1F719EF000F28A38 /* SynchronizationReducer.swift in Sources */,
+				15FA29F31F71AFDF00B8ACF6 /* ToDo.swift in Sources */,
+				151D2B281F703D6500E47534 /* ArchiveViewController.swift in Sources */,
+				15FA29F51F71B03900B8ACF6 /* ReduxExtensions.swift in Sources */,
+				151B0C271F719DB400F28A38 /* SynchronizationActions.swift in Sources */,
 				DD362A0F1F607D6D007307CC /* AppDelegate.swift in Sources */,
+				151B0C291F719ED500F28A38 /* TodosReducer.swift in Sources */,
+				151B0C231F719BF200F28A38 /* TodoActionCreators.swift in Sources */,
+				158E1F8C1F704E49002D629B /* SettingsViewController.swift in Sources */,
+				151B0C2B1F719EE400F28A38 /* SortingReducer.swift in Sources */,
+				15EC4CF21F7051D400948B65 /* Middleware.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

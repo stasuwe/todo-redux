@@ -1,10 +1,74 @@
-{"todos":[{"id":1,"text":"Mauris ullamcorper purus sit amet nulla.","completed":false,"date":"1504627913"},
-{"id":2,"text":"Duis mattis egestas metus.","completed":true,"date":"1480814084"},
-{"id":3,"text":"Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros.","completed":true,"date":"1503010522"},
-{"id":4,"text":"Suspendisse ornare consequat lectus.","completed":false,"date":"1481266834"},
-{"id":5,"text":"Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.","completed":false,"date":"1494812122"},
-{"id":6,"text":"Nulla ac enim.","completed":true,"date":"1495392745"},
-{"id":7,"text":"Praesent lectus.","completed":true,"date":"1498163034"},
-{"id":8,"text":"Duis at velit eu est congue elementum.","completed":false,"date":"1490311752"},
-{"id":9,"text":"Morbi non lectus.","completed":true,"date":"1491397834"},
-{"id":10,"text":"Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis.","completed":true,"date":"1502781641"}]}
+{
+  "todos": [
+    {
+      "archived": false,
+      "id": 1,
+      "date": 1504627913,
+      "completed": true,
+      "text": "Mauris ullamcorper purus sit amet nulla."
+    },
+    {
+      "id": 2,
+      "text": "Duis mattis egestas metus.",
+      "completed": true,
+      "archived": false,
+      "date": 1480814084
+    },
+    {
+      "archived": false,
+      "id": 3,
+      "date": 1503010522,
+      "completed": false,
+      "text": "Donec odio justo, sollicitudin ut, suscipit a, feugiat et, eros."
+    },
+    {
+      "archived": false,
+      "id": 4,
+      "date": 1481266834,
+      "completed": true,
+      "text": "Suspendisse ornare consequat lectus."
+    },
+    {
+      "archived": false,
+      "id": 5,
+      "date": 1494812122,
+      "completed": false,
+      "text": "Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus."
+    },
+    {
+      "id": 6,
+      "text": "Nulla ac enim.",
+      "completed": true,
+      "archived": false,
+      "date": 1495392745
+    },
+    {
+      "id": 7,
+      "text": "Praesent lectus.",
+      "completed": true,
+      "archived": false,
+      "date": 1498163034
+    },
+    {
+      "archived": false,
+      "id": 8,
+      "date": 1490311752,
+      "completed": true,
+      "text": "Duis at velit eu est congue elementum."
+    },
+    {
+      "archived": false,
+      "id": 9,
+      "date": 1491397834,
+      "completed": false,
+      "text": "Morbi non lectus."
+    },
+    {
+      "archived": false,
+      "id": 10,
+      "date": 1502781641,
+      "completed": true,
+      "text": "Nullam orci pede, venenatis non, sodales sed, tincidunt eu, felis."
+    }
+  ]
+}

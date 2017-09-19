@@ -9,33 +9,23 @@
 import ReSwift
 
 struct ApplicationState: StateType {
-  
+  var todosState: TodosState = TodosState()
+  var sortingState: SortingState = SortingState()
+  var synchronizationState: SynchronizationState = SynchronizationState()
+}
+
+struct TodosState: StateType {
   var todos: [ToDo] = []
+  var loadingError: Error? = nil
+}
+
+struct SortingState: StateType {
   var sortingType: SortingType = .completed
   var sortingOrder: SortingOrder = .asc
-  
 }
 
-struct ToDo: Codable {
-  fileprivate let id: Int = UUID().hashValue
-  var text: String
-  var isCompleted: Bool = false
-  var date: Date = Date()
-  
-  init(text: String, isCompleted: Bool = false) {
-    self.text = text
-    self.isCompleted = isCompleted
-  }
-  
-  mutating func toogleComplete() {
-    isCompleted = !isCompleted
-  }
-}
-
-extension ToDo: Equatable {
-  public static func ==(lhs: ToDo, rhs: ToDo) -> Bool {
-    return lhs.id == rhs.id
-  }
+struct SynchronizationState: StateType {
+  var synchronizeNewTodos: Bool = false
 }
 
 enum SortingType {

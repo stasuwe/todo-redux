@@ -9,22 +9,14 @@
 import UIKit
 import ReSwift
 
-enum Redux {
-    static let store: Store<ApplicationState> = (UIApplication.shared.delegate as! StoreHolder).store
-}
-
-protocol StoreHolder {
-    var store: Store<ApplicationState> { get }
-}
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
     
-    fileprivate let applicationStore = Store(reducer: Reducers.applicationReducer,
+    fileprivate let applicationStore = Store(reducer: ApplicationReducer.reducer,
                                              state: ApplicationState(),
-                                             middleware: [])
+                                             middleware: [Middlewares.logging])
     
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
